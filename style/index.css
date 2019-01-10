@@ -1,20 +1,22 @@
 body {
   background-color: rgb(233, 233, 233);
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: 200%;
 }
 
 p {
   margin: 0;
 }
 
-.center {
-}
-
 .name-text {
   font-family: Cantarell, Arial;
   font-size: 450%;
+  animation: 1s ease 0s normal forwards 1 fadein-name;
+}
+
+.name-text::first-letter {
+  font-size: 130%;
 }
 
 .name-text.first {
@@ -22,42 +24,47 @@ p {
   margin-right: 20px;
 }
 
-.name-text.second {
-}
-
 .name-container {
+  margin-top: 20%;
+  margin-bottom: -20;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* border: 3px solid #E95E21; */
 }
 
-.name-text.second > span {
-    display: inline-block;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-    font-size: 130%;
-    animation: cursor 2s linear infinite;
+.motto-text {
+  text-align: center;
+  font-family: Cantarell, Arial;
+  font-size: 200%;
+  margin-bottom: -20;
 }
 
-@keyframes cursor {
-  0% {
-    opacity: 1;
-  }
-  59% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.motto-text.first {
+  animation: 3s ease 0s normal forwards 1 fadein-motto-top;
 }
 
-.name-text::first-letter {
+.motto-text.second {
+  animation: 3s ease 0s normal forwards 1 fadein-motto-bottom;
+}
+
+.motto-text::first-letter {
   font-size: 130%;
+}
+
+@keyframes fadein-name{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadein-motto-top{
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    66% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadein-motto-bottom{
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
 }

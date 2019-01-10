@@ -9,6 +9,9 @@ p {
   margin: 0;
 }
 
+.center {
+}
+
 .name-text {
   font-family: Cantarell, Arial;
   font-size: 450%;
@@ -16,18 +19,45 @@ p {
 
 .name-text.first {
   margin-bottom: -50;
+  margin-right: 20px;
+}
+
+.name-text.second {
 }
 
 .name-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 3px solid #E95E21; */
+}
+
+.name-text.second > span {
+    display: inline-block;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    font-size: 130%;
+    animation: cursor 2s linear infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .name-text::first-letter {
-  font-size: 130%;
-}
-
-.name-text2::first-letter {
   font-size: 130%;
 }

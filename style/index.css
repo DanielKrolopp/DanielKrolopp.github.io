@@ -112,11 +112,47 @@ hr {
   margin: auto;
   margin-bottom: 20;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .occupation-image {
   margin-right: 5;
   margin-left: 5;
+  margin-top: 5;
+  margin-bottom: 5;
+  position: relative;
+}
+
+.occupation-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.occupation-text {
+  font-family: Maven Pro, Arial;
+  font-size: 175%;
+  text-align: center;
+}
+
+.occupation-image:hover .occupation-image-overlay {
+  opacity: 1;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #text-align-right {

@@ -1,12 +1,36 @@
 body {
   background-color: rgb(233, 233, 233);
-  display: flex;
-  justify-content: center;
-  height: 200%;
+  height: 400%;
+  margin: 0;
 }
 
 p {
   margin: 0;
+}
+
+h1 {
+  font-family: Maven Pro, Arial;
+  font-size: 300%;
+  padding-left: 20%;
+  margin-bottom: -5px;
+}
+
+h1::first-letter {
+  font-size: 130%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 75%;
+  background: #333;
+  margin-bottom: 20;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.center {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .name-text {
@@ -21,7 +45,6 @@ p {
 
 .name-text.first {
   margin-bottom: -50;
-  margin-right: 20px;
 }
 
 .name-container {
@@ -41,14 +64,74 @@ p {
 
 .motto-text.first {
   animation: 3s ease 0s normal forwards 1 fadein-motto-top;
+  margin-bottom: -5;
 }
 
 .motto-text.second {
   animation: 3s ease 0s normal forwards 1 fadein-motto-bottom;
 }
 
-.motto-text::first-letter {
-  font-size: 130%;
+.meet-me {
+  margin-top: 28%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(215, 215, 215);
+}
+
+.meet-me-text-frame {
+  display: flex;
+}
+
+.meet-me-container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20;
+  display: flex;
+}
+
+.meet-me-container > p {
+  font-family: Maven Pro, Arial;
+  margin-left: 10;
+  float: left;
+}
+
+.meet-me-text-container {
+  font-family: Maven Pro, Arial;
+}
+
+.meet-me-text-container > p {
+  padding-bottom: 20;
+}
+
+.meet-me-text-container > h2 {
+  font-family: Cantarell, Arial;
+}
+
+.occupation-container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20;
+  display: flex;
+}
+
+.occupation-image {
+  margin-right: 5;
+  margin-left: 5;
+}
+
+#text-align-right {
+  text-align: right;
+  margin-right: 10;
+}
+
+#text-align-left {
+  text-align: left;
+  margin-left: 10;
+}
+
+.my-work {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 @keyframes fadein-name{

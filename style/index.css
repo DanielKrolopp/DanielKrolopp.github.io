@@ -19,6 +19,16 @@ h1::first-letter {
   font-size: 130%;
 }
 
+h2 {
+  font-family: Maven Pro, Arial;
+  padding-left: 5%;
+  margin-bottom: -5px;
+}
+
+h2::first-letter {
+  font-size: 130%;
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -71,9 +81,6 @@ button::-moz-focus-inner {
   margin-top: 200px;
   margin-bottom: -20px;
   text-align: center;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* display: flex; */
 }
 
 .motto-text {
@@ -172,7 +179,6 @@ button::-moz-focus-inner {
 
 .occupation-image:hover .occupation-image-overlay {
   opacity: 1;
-  /* border: 1px solid rgb(215, 215, 215); */
 }
 
 .image {
@@ -194,6 +200,21 @@ button::-moz-focus-inner {
 .my-work {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.occupation-section {
+  background-color: rgb(215, 215, 215);
+  width: 70%;
+  display: table;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.occupation-section > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes fadein-name{

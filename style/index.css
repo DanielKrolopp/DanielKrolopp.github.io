@@ -28,8 +28,19 @@ hr {
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+button:focus {
+  outline: 0;
+}
+
+button:active:focus {
+  outline: 0;
+}
+
+button::-moz-focus-inner {
+  border: 0px;
+}
+
 .center {
-  /* width: 45%; */
   display: table;
   margin: 0 auto;
 }
@@ -112,12 +123,12 @@ hr {
 
 .meet-me-text-container > p {
   padding-bottom: 20;
-  font-size: 2.2vh;
+  font-size: 2vh;
 }
 
-.meet-me-text-container > h2 {
+.meet-me-text-container > h4 {
   font-family: Cantarell, Arial;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .occupation-container {
@@ -150,6 +161,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .occupation-text {
@@ -160,6 +172,7 @@ hr {
 
 .occupation-image:hover .occupation-image-overlay {
   opacity: 1;
+  /* border: 1px solid rgb(215, 215, 215); */
 }
 
 .image {

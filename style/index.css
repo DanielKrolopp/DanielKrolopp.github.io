@@ -70,6 +70,7 @@ hr {
   font-family: Cantarell, Arial;
   font-size: 200%;
   margin-bottom: -20px;
+  animation-fill-mode: forwards;
 }
 
 .motto-text.first {
@@ -97,11 +98,6 @@ hr {
   margin: auto;
   margin-bottom: 20;
   display: flex;
-}
-
-/* Not sure why, but this is needed for IE.*/
-.meet-me-container > img {
-  min-width: 45%;
 }
 
 .meet-me-container > p {
@@ -199,6 +195,7 @@ hr {
 
 @keyframes fadein-motto-bottom{
     0% { opacity: 0; }
+    33% { opacity: 0; }
     66% { opacity: 0; }
     100% { opacity: 1; }
 }

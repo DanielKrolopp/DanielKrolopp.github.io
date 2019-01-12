@@ -1,7 +1,9 @@
 'use strict';
 
-const sandiaDescription = "Starting in May 2019, I will be a summer R&D Intern at Sandia National Laboratories."
-const sandiaLocation = "ALBUQUERQUE, NM"
+const sandiaDescription = "Starting in May 2019, I will be a summer R&D Intern at Sandia National Laboratories.";
+const sandiaLocation = "ALBUQUERQUE, NM";
+const researchDescription = "I'm currently involved in research with Professor Comer regarding a new data center architecture named DCNet. DCNet seeks to optimize East/West network traffic.";
+const researchLocation = "WEST LAFAYETTE, IN";
 
 class OccDetails extends React.Component {
   constructor(props) {
@@ -17,6 +19,10 @@ class OccDetails extends React.Component {
       case 'SANDIA NATIONAL LABS':
         this.state.description = sandiaDescription;
         this.state.occupationLocation = sandiaLocation;
+        break;
+      case 'GRADUATE RESEARCH ASSISTANT':
+        this.state.description = researchDescription;
+        this.state.occupationLocation = researchLocation;
         break;
       default:
         this.state.description = "Excepteur sint occaecat cupidatat non but see an issue with steps. as per your fiddle, there are definitely three stages to the animation, but it's just getting darker and darker. instead, it should be flashing solid red, green, blue without fading or losing brightness. if i comment out the timing function, it does better at simply flashing each color, but";

@@ -112,10 +112,12 @@ hr {
 
 .meet-me-text-container > p {
   padding-bottom: 20;
+  font-size: 2.2vh;
 }
 
 .meet-me-text-container > h2 {
   font-family: Cantarell, Arial;
+  font-weight: bold;
 }
 
 .occupation-container {

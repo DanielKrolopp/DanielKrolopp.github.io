@@ -217,6 +217,20 @@ button::-moz-focus-inner {
   margin-bottom: 1rem;
 }
 
+.occupation-section > p {
+  font-family: Maven Pro, Arial;
+}
+
+.inline-span {
+  display: inline
+}
+
+.occupation-location {
+  float: left;
+  font-family: Cantarell, Arial;
+  margin-right: 0.4rem;
+}
+
 @keyframes fadein-name{
     0% { opacity: 0; }
     100% { opacity: 1; }

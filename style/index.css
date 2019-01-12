@@ -29,7 +29,8 @@ hr {
 }
 
 .center {
-  width: 50%;
+  /* width: 45%; */
+  display: table;
   margin: 0 auto;
 }
 
@@ -39,20 +40,22 @@ hr {
   animation: 1s ease 0s normal forwards 1 fadein-name;
 }
 
-.name-text::first-letter {
+#large-letter{
   font-size: 130%;
+  margin-right: -0.25em;
 }
 
 .name-text.first {
   margin-bottom: -50px;
+  margin-right: 0.25em;
 }
 
 .name-container {
-  margin-top: 20%;
+  margin-top: 200px;
   margin-bottom: -20px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* display: flex; */
 }
 
 .motto-text {

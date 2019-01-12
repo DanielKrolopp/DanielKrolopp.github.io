@@ -38,6 +38,8 @@ hr {
   font-family: Cantarell, Arial;
   font-size: 450%;
   animation: 1s ease 0s normal forwards 1 fadein-name;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 #large-letter{
@@ -46,13 +48,18 @@ hr {
 }
 
 .name-text.first {
-  margin-bottom: -50px;
+  margin-bottom: -25px;
   margin-right: 0.25em;
+}
+
+.name-text.second {
+  margin-top: -25px;
 }
 
 .name-container {
   margin-top: 200px;
   margin-bottom: -20px;
+  text-align: center;
   /* flex-wrap: wrap; */
   /* justify-content: center; */
   /* display: flex; */

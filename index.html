@@ -1,6 +1,7 @@
 <head>
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style/index.css">
@@ -76,12 +77,13 @@
     <h1>WORK, SCHOOL AND PROJECTS</h1>
     <hr>
     <div class="occupation-container">
-      <div class="occupation-image">
+      <!-- <div class="occupation-image" id="box_container">
         <img src="images/sandia.jpg"  alt="Sandia National Laboratories" class="image">
         <href class="btn shadow-none rounded-0 occupation-image-overlay">
           <span class="occupation-text">SANDIA NATIONAL LABS</span>
         </href>
-      </div>
+      </div> -->
+      <div class="occupation-image" id="occ_box"></div>
       <div class="occupation-image">
         <img src="images/network.jpg"  alt="DCNet">
         <href class="btn shadow-none rounded-0 occupation-image-overlay">
@@ -120,7 +122,35 @@
       </div>
     </div>
   </div>
+
+  <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = { clicked: false };
+          }
+
+          render() {
+            if (this.state.clicked) {
+              alert('Yo');
+            }
+            return (
+              <div >
+                <img src="images/sandia.jpg"  alt="Sandia National Laboratories" className="image"></img>
+                <a className="btn shadow-none rounded-0 occupation-image-overlay" onClick={() => this.setState({ clicked: true }) }>
+                  <span className="occupation-text">SANDIA NATIONAL LABS</span>
+                </a>
+              </div>
+            );
+          }
+        }
+
+        ReactDOM.render(<App />, document.getElementById('occ_box'));
+    </script>
 </body>
 
 <foot>
+  <script src="js/like_button.js"></script>
 </foot>

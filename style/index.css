@@ -44,22 +44,22 @@ hr {
 }
 
 .name-text.first {
-  margin-bottom: -50;
+  margin-bottom: -50px;
 }
 
 .name-container {
   margin-top: 20%;
-  margin-bottom: -20;
-  display: flex;
+  margin-bottom: -20px;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  display: flex;
 }
 
 .motto-text {
   text-align: center;
   font-family: Cantarell, Arial;
   font-size: 200%;
-  margin-bottom: -20;
+  margin-bottom: -20px;
 }
 
 .motto-text.first {
@@ -87,6 +87,11 @@ hr {
   margin: auto;
   margin-bottom: 20;
   display: flex;
+}
+
+/* Not sure why, but this is needed for IE.*/
+.meet-me-container > img {
+  min-width: 45%;
 }
 
 .meet-me-container > p {

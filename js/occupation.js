@@ -2,7 +2,7 @@
 
 const sandiaDescription = "Starting in May 2019, I will be a summer R&D Intern at Sandia National Laboratories.";
 const sandiaLocation = "ALBUQUERQUE, NM";
-const researchDescription = "I'm currently involved in research with Professor Comer regarding a new data center architecture named DCNet. DCNet seeks to optimize East/West network traffic.";
+const researchDescription = "I'm currently involved in research with <a href=\"https://www.cs.purdue.edu/people/dec\">Professor Comer</a> regarding a new data center architecture named DCNet. DCNet seeks to optimize East/West network traffic.";
 const researchLocation = "WEST LAFAYETTE, IN";
 
 class OccDetails extends React.Component {
@@ -54,7 +54,7 @@ class OccDetails extends React.Component {
         <h2>{ this.props.occupation }</h2>
         <span className="inline-span">
           <strong className="occupation-location">{ this.state.occupationLocation } - </strong>
-          <p> { this.state.description } </p>
+          <p dangerouslySetInnerHTML={{ __html: this.state.description }}></p>
         </span>
       </div>
     );

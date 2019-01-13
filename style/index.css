@@ -39,13 +39,13 @@ hr {
 }
 
 .footer {
-  /* position: absolute; */
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: center;
   background-color: rgb(215, 215, 215);
+  font-size: 80%;
 }
 
 button:focus {
@@ -197,6 +197,12 @@ button::-moz-focus-inner {
   height: auto;
 }
 
+.social-media-icon {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-top: -0.2rem;
+}
+
 #text-align-right {
   text-align: right;
   margin-right: 10;
@@ -247,7 +253,19 @@ button::-moz-focus-inner {
 }
 
 .social-media-links {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+#linkedin-icon {
+  filter: brightness(700%);
+}
+
+#github-icon {
+  filter: brightness(850%);
+}
+
+#resume-icon {
+  filter: brightness(350%);
 }
 
 @keyframes fadein-name{

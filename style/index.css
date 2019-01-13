@@ -1,6 +1,6 @@
 body {
   background-color: rgb(233, 233, 233);
-  height: 400%;
+  /* height: 300%; */
   margin: 0;
 }
 
@@ -36,6 +36,16 @@ hr {
   background: #333;
   margin-bottom: 20;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.footer {
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(215, 215, 215);
 }
 
 button:focus {
@@ -207,6 +217,7 @@ button::-moz-focus-inner {
   width: 90%;
   display: table;
   margin: 0 auto;
+  margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -229,6 +240,14 @@ button::-moz-focus-inner {
   float: left;
   font-family: Cantarell, Arial;
   margin-right: 0.4rem;
+}
+
+.occupation-placeholder {
+  margin-bottom: 3rem;
+}
+
+.social-media-links {
+  margin-left: 0.5rem;
 }
 
 @keyframes fadein-name{

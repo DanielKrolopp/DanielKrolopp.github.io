@@ -234,12 +234,12 @@ button::-moz-focus-inner {
   margin-bottom: 1rem;
 }
 
-.occupation-section > p {
-  font-family: Maven Pro, Arial;
-}
-
 .inline-span {
   display: inline
+}
+
+.inline-span > p {
+  margin-bottom: 1rem;
 }
 
 .occupation-location {

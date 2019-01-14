@@ -44,7 +44,7 @@ hr {
   left: 0;
   padding: 1rem;
   text-align: center;
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(233, 233, 233);
   font-size: 80%;
 }
 
@@ -125,7 +125,7 @@ button::-moz-focus-inner {
   width: 70%;
   margin: auto;
   margin-bottom: 20;
-  display: flex;
+  display: table;
 }
 
 .meet-me-container > p {
@@ -140,7 +140,7 @@ button::-moz-focus-inner {
 
 .meet-me-text-container > p {
   padding-bottom: 20;
-  font-size: 2vh;
+  /* font-size: 2vh; */
 }
 
 .meet-me-text-container > h4 {
@@ -205,17 +205,14 @@ button::-moz-focus-inner {
 
 #text-align-right {
   text-align: right;
-  margin-right: 10;
 }
 
 #text-align-left {
   text-align: left;
-  margin-left: 10;
 }
 
 .my-work {
-  padding-top: 2px;
-  padding-bottom: 2px;
+  display: inline-block;
 }
 
 .occupation-section {
@@ -256,6 +253,50 @@ button::-moz-focus-inner {
   margin-left: 0.2rem;
 }
 
+.values {
+  background-color: rgb(215, 215, 215);
+  padding-bottom: 0.5rem;
+}
+
+.values-box {
+  width: 30%;
+  font-family: Cantarell, Arial;
+  white-space: nowrap;
+  font-size: 150%;
+  text-align: center;
+  display: table;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.meet-me-container div {
+   min-height: 200px;
+   padding: 10px;
+}
+
+.left-top {
+  float: left;
+  width: 486px;
+  margin-right: 0.5rem;
+}
+
+.right-bottom {
+  overflow:hidden;
+  min-height:170px;
+}
+
+.right-top {
+  float: right;
+  width: 486px;
+  margin-right: 0.5rem;
+}
+
+.left-bottom {
+  overflow:hidden;
+  min-height:170px;
+}
+
 #linkedin-icon {
   filter: brightness(700%);
 }
@@ -285,4 +326,19 @@ button::-moz-focus-inner {
     33% { opacity: 0; }
     66% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@media screen and (max-width: 1100px) {
+   .left-top {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+  }
+  .right-top {
+   float: none;
+   margin-left:0;
+   width:auto;
+   border:0;
+ }
 }

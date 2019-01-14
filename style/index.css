@@ -65,6 +65,7 @@ button::-moz-focus-inner {
 .center {
   display: table;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .name-text {
@@ -90,7 +91,7 @@ button::-moz-focus-inner {
 }
 
 .name-container {
-  margin-top: 200px;
+  margin-top: 35vh;
   margin-bottom: -20px;
   text-align: center;
 }
@@ -113,9 +114,7 @@ button::-moz-focus-inner {
 }
 
 .meet-me {
-  margin-top: 28%;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-bottom: 2rem;
   background-color: rgb(215, 215, 215);
 }
 
@@ -126,7 +125,7 @@ button::-moz-focus-inner {
 .meet-me-container {
   width: 70%;
   margin: auto;
-  margin-bottom: 0.6rem;
+  margin-bottom: -0.6rem;
   display: table;
 }
 
@@ -273,7 +272,8 @@ button::-moz-focus-inner {
 }
 
 .meet-me-container div {
-   min-height: 200px;
+   /* min-height: 200px; */
+   /* min-width: 250px; */
    padding: 10px;
 }
 
@@ -348,11 +348,5 @@ button::-moz-focus-inner {
   .aligned-left-about-me-container > .left-bottom {
     order: 2;
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .aligned-left-about-me-container > .text-align-right {
-    text-align: right;
   }
 }

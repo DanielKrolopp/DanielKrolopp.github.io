@@ -111,7 +111,7 @@ class MyWorkArea extends React.Component {
         <OccBox occupation='MOBI WIRELESS MANAGEMENT' imagePath='images/mobi.png' onClick={ this.handleClick } />
         <OccBox occupation='B.S. COMPUTER SCIENCE' imagePath='images/purduebelltower.jpg' onClick={ this.handleClick } />
         <OccBox occupation='EARLIER' imagePath='images/gbs.jpg' onClick={ this.handleClick } />
-        { this.state.occupation && <OccDetails occupation={ this.state.occupation } /> }
+        { this.state.occupation && <div data-aos="fade-up" data-aos-duration="1000"><OccDetails occupation={ this.state.occupation } /></div> }
       </div>
     );
   }

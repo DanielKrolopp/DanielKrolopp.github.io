@@ -5,9 +5,9 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style/index.css">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -38,10 +38,10 @@
     </div>
   </div>
 
-  <div class="meet-me">
+  <div data-aos="fade-up" data-aos-duration="1000" class="meet-me">
     <h1>MY NAME IS DANIEL</h1>
     <hr>
-    <div class="meet-me-container">
+    <div class="meet-me-container" data-aos="fade-left" data-aos-duration="500">
       <div class="left-top">
         <img width="486" height="324" src="images/headshot-dk.jpg" alt="Headshot">
       </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="meet-me-container aligned-left-about-me-container">
+    <div class="meet-me-container aligned-left-about-me-container" data-aos="fade-right" data-aos-duration="500">
       <div class="right-top">
         <img width="486" height="324" src="images/spain.jpg" alt="Spain">
       </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="meet-me-container">
+    <div class="meet-me-container" data-aos="fade-left" data-aos-duration="500">
       <div class="left-top">
         <!-- TODO fix aspect ratio -->
         <img width="486" height="324" src="images/lake.jpg" alt="Lake">
@@ -77,24 +77,27 @@
       </div>
     </div>
   </div>
-  <div id="work">
+
+  <div data-aos="fade-up" data-aos-duration="1000" id="work">
     <h1>WORK, SCHOOL AND PROJECTS</h1>
     <hr>
     <div class="occupation-placeholder" id="occ_cont"></div>
   </div>
-  <div class="values">
+
+  <div data-aos="fade-up" data-aos-duration="1000" class="values">
     <h1>GUIDELINES I TRY TO LIVE BY</h1>
     <hr>
-    <div class="values-box">
+    <div class="values-box" data-aos="fade-right">
       <p>KEEP AN OPEN MIND</p>
     </div>
-    <div class="values-box">
+    <div class="values-box" data-aos="fade-left">
       <p>GIVE THANKS DAILY</p>
     </div>
-    <div class="values-box">
+    <div class="values-box" data-aos="fade-right">
       <p>NEVER STOP ASKING QUESTIONS</p>
     </div>
   </div>
+
 </body>
 
 <div class="footer">
@@ -114,4 +117,8 @@
 
 <foot>
   <script type="text/babel" src="js/occupation.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </foot>

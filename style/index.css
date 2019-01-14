@@ -8,11 +8,13 @@ p {
   margin: 0;
 }
 
+/* Can't decide whether to do align left w padding or center */
 h1 {
   font-family: Maven Pro, Arial;
   font-size: 300%;
-  padding-left: 20%;
+  /* padding-left: 20%; */
   margin-bottom: -5px;
+  text-align: center;
 }
 
 h1::first-letter {

@@ -233,7 +233,8 @@ button::-moz-focus-inner {
 }
 
 .inline-span {
-  display: inline
+  display: inline;
+  font-family: Maven Pro, Arial;
 }
 
 .inline-span > p {

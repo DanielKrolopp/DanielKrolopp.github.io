@@ -1,8 +1,10 @@
 'use strict';
 
-const sandiaDescription = "<p>Starting in May 2019, I will take on a new role as a summer R&D Intern at <a href=\"https://www.sandia.gov\" target=\"_blank\">Sandia National Laboratories</a>. Throughout the internship, I will be working as a part of their Center for Cyber Defenders (CCD), whose projects range from operating systems analysis and software defined networking to machine learning. I'm excited to spend my summer working along a group of bright and driven researchers dedicated to making a difference in the realm of digital security.</p>";
+const gtaDescription = "<p>During the 2019-20 academic year, I am a teaching assistant for CS 354 - Operating Systems. In the class, students develop components of a real operating system kernel including a scheduler, message passing, and memory management. My responsibilities include instructing a lab section, grading homeworks and proctoring/grading exams. This was one of my favorite classes as an undergraduate, so I look forward to helping instruct it.</p>";
+const gtaLocation = "WEST LAFAYETTE, IN";
+const sandiaDescription = "<p>This past summer, I worked as an R&D Intern at <a href=\"https://www.sandia.gov\" target=\"_blank\">Sandia National Laboratories</a>. Throughout the summer, I developed machine learning and deep learning models to classify packets by protocol. Two other interns and I collaborated to build an ensemble approach for identifying the protocol of unknown packets using models we had pre-trained. I also developed a framework for identifying the best neural network architectures and corresponding hyperparameters. I'm excited to have spent my summer working alongside a group of bright and driven researchers dedicated to making a difference in the realm of digital security.</p>";
 const sandiaLocation = "ALBUQUERQUE, NM";
-const researchDescription = "<p>I'm currently involved in research with <a href=\"https://www.cs.purdue.edu/people/dec\" target=\"_blank\">Professor Douglas Comer</a> regarding a newly-proposed data center architecture named <a href=\"https://www.researchgate.net/publication/314203668_DCnet_A_new_data_center_network_architecture\" target=\"_blank\">DCnet (Data Center network)</a>. DCnet seeks to optimize East/West network traffic within modern data centers, which amounts to about 76% of all internet traffic, <a href=\"https://blogs.cisco.com/security/trends-in-data-center-security-part-1-traffic-trends\" target=\"_blank\">according to Cisco</a>. DCnet proposes reworking layers 2 and 3 of the network protocol stack within data centers to achieve faster communication and greater portability between virtualized server environments and containers.</p><p>The results of a DARPA grant proposal for DCnet are pending.</p>";
+const researchDescription = "<p>I'm currently involved in research with <a href=\"https://www.cs.purdue.edu/people/dec\" target=\"_blank\">Professor Douglas Comer</a> regarding a newly-proposed data center architecture named <a href=\"https://www.researchgate.net/publication/314203668_DCnet_A_new_data_center_network_architecture\" target=\"_blank\">DCnet (Data Center network)</a>. DCnet seeks to optimize East/West network traffic within modern data centers, which amounts to about 76% of all internet traffic, <a href=\"https://blogs.cisco.com/security/trends-in-data-center-security-part-1-traffic-trends\" target=\"_blank\">according to Cisco</a>. DCnet proposes reworking layers 2 and 3 of the network protocol stack within data centers to achieve faster communication and greater portability between virtualized server environments and containers.</p><p>DARPA awarded a grant for the DCnet project in May 2019.</p>";
 const researchLocation = "WEST LAFAYETTE, IN";
 const msDescription = "<p>I decided midway through my undergraduate studies to pursue a combined-degree B.S./M.S. in Computer Science. By seizing this awesome opportunity, I'm seeking to further the depth of my knowledge in Computer Science. During my undergraduate studies, I discovered my fascination with computer networking, operating systems and other low-level systems concepts, and that I wanted to learn more. My anticipated graduation date from the Masters program is May 2020.<p>";
 const msLocation = "WEST LAFAYETTE, IN";
@@ -26,11 +28,15 @@ class OccDetails extends React.Component {
 
   render() {
     switch(this.props.occupation) {
+      case 'GRADUATE TEACHING ASSISTANT':
+        this.state.description = gtaDescription;
+        this.state.occupationLocation = gtaLocation;
+        break;
       case 'SANDIA NATIONAL LABS':
         this.state.description = sandiaDescription;
         this.state.occupationLocation = sandiaLocation;
         break;
-      case 'GRADUATE RESEARCH ASSISTANT':
+      case 'GRADUATE RESEARCH':
         this.state.description = researchDescription;
         this.state.occupationLocation = researchLocation;
         break;
@@ -104,8 +110,9 @@ class MyWorkArea extends React.Component {
   render() {
     return (
       <div className="occupation-container">
-        <OccBox occupation='SANDIA NATIONAL LABS' imagePath='images/sandia.jpg' onClick={ this.handleClick } />
-        <OccBox occupation='GRADUATE RESEARCH ASSISTANT' imagePath='images/network.jpg' onClick={ this.handleClick } />
+        <OccBox occupation='GRADUATE TEACHING ASSISTANT' imagePath='images/terminal.png' onClick={ this.handleClick } />
+        <OccBox occupation='SANDIA NATIONAL LABS' imagePath='images/sandia.png' onClick={ this.handleClick } />
+        <OccBox occupation='GRADUATE RESEARCH' imagePath='images/network.jpg' onClick={ this.handleClick } />
         <OccBox occupation='M.S. COMPUTER SCIENCE' imagePath='images/fallpurdue.jpg' onClick={ this.handleClick } />
         <OccBox occupation='UNDERGRAD TEACHING ASSISTANT' imagePath='images/circuitry.jpg' onClick={ this.handleClick } />
         <OccBox occupation='MOBI WIRELESS MANAGEMENT' imagePath='images/mobi.png' onClick={ this.handleClick } />

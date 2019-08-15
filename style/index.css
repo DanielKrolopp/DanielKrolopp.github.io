@@ -150,11 +150,31 @@ button::-moz-focus-inner {
 }
 
 .occupation-container {
-  width: 70%;
+  /*width: 60%;
   margin: auto;
   margin-bottom: 20;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;*/
+  width: 900;
+  margin: auto;
+  margin-bottom: 20;
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: center;
+  align-items: center;
 }
 
 .occupation-image {

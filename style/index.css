@@ -131,8 +131,13 @@ button::-moz-focus-inner {
   text-align: center;
 }
 
-.meet-me-sub {
-  max-width: 800;
+.meet-me-sub1 {
+  max-width: 800px;
+  display: inline-block
+}
+
+.meet-me-sub2 {
+  max-width: 1000px;
   display: inline-block
 }
 

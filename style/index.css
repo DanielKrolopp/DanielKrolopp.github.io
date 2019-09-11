@@ -128,6 +128,12 @@ button::-moz-focus-inner {
   margin: auto;
   margin-bottom: -0.6rem;
   display: table;
+  text-align: center;
+}
+
+.meet-me-sub {
+  max-width: 800;
+  display: inline-block
 }
 
 .meet-me-container > p {
@@ -301,13 +307,18 @@ button::-moz-focus-inner {
 
 .left-top {
   float: left;
-  width: 486px;
+  margin-right: 0.5rem;
+}
+
+.left-top-outdoors {
+  float: left;
   margin-right: 0.5rem;
 }
 
 .right-bottom {
   overflow:hidden;
   min-height:170px;
+  min-width: 400px;
 }
 
 .right-top {
@@ -320,6 +331,10 @@ button::-moz-focus-inner {
   overflow:hidden;
   min-height:170px;
   text-align: right;
+}
+
+.left-image-container {
+  margin-right: -25;
 }
 
 #linkedin-icon {
@@ -359,6 +374,18 @@ button::-moz-focus-inner {
     margin-right:0;
     width:auto;
     border:0;
+  }
+  .left-top-outdoors {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+  }
+  .left-top {
+    margin-left: -420px;
+  }
+  .left-top-outdoors {
+    margin-left: -260px;
   }
   .aligned-left-about-me-container {
     display: flex;

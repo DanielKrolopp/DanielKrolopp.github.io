@@ -306,7 +306,7 @@ button::-moz-focus-inner {
 
 .meet-me-container div {
    /* min-height: 200px; */
-   /* min-width: 250px; */
+   min-width: 250px;
    padding: 10px;
 }
 
@@ -374,11 +374,20 @@ button::-moz-focus-inner {
 }
 
 @media screen and (max-width: 1100px) {
+  .right-top > img {
+    margin-left: -305;
+  }
+  .left-image-container > img {
+    margin-left: 80;
+  }
   .left-top {
     float: none;
     margin-right:0;
     width:auto;
     border:0;
+  }
+  .left-bottom {
+    text-align: left;
   }
   .left-top-outdoors {
     float: none;
